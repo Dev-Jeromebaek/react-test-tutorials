@@ -18,7 +18,17 @@
     "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "parser": "babel-eslint",
+    "extends": [
+      "react-app",
+      "prettier"
+    ],
+    "plugins": [
+      "react",
+      "react-hooks",
+      "jsx-a11y",
+      "import"
+    ]
   },
   "browserslist": {
     "production": [
@@ -43,6 +53,9 @@
     "@storybook/components": "^5.2.5",
     "@storybook/react": "^5.2.5",
     "@storybook/theming": "^5.2.5",
+    "@testing-library/jest-dom": "^4.1.2",
+    "@testing-library/react": "^9.3.0",
+    "@types/jest": "^24.0.19",
     "babel-eslint": "^10.0.3",
     "babel-plugin-macros": "^2.6.1",
     "eslint": "^6.5.1",
